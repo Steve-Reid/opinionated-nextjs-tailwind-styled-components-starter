@@ -103,6 +103,14 @@ module.exports = {
   },
   overrides: [
     {
+      // Only uses Testing Library lint rules in test files
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    },
+    {
       // or whatever matches stories specified in .storybook/main.js
       files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
       rules: {
