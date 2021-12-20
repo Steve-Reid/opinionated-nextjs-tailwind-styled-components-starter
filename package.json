@@ -10,7 +10,10 @@
     "build-storybook": "build-storybook",
     "test": "jest --env=jsdom --testPathIgnorePatterns test-utils.tsx cypress setupEnv.ts TemplateName.*",
     "test:watch": "jest --watch --env=jsdom --testPathIgnorePatterns   test-utils.tsx cypress setupEnv.ts TemplateName.*",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:clean": "rm -rf cypress"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -35,6 +38,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
+    "cypress": "^9.1.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "19.0.2",
     "eslint-config-airbnb-typescript": "^16.1.0",
