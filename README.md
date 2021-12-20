@@ -9,7 +9,7 @@ An opinionated React Nextjs starter project
 - React & React DOM v17
 - Type Checker - TypeScript v4.5.2
 - Storybook v6.4.7
-- Lint - ESlint, AirBnB & Eslint-config-next
+- Lint - ESlint v8, AirBnB & Eslint-config-next
 - Format - Prettier
 - Unit Testing - Jest + react-testing-library
 - Mocking - Mock Service Worker
