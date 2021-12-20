@@ -4,6 +4,7 @@ module.exports = {
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'prettier',
     'plugin:storybook/recommended',
     'plugin:@next/next/recommended',
   ],
@@ -36,6 +37,7 @@ module.exports = {
     },
   },
   rules: {
+    'arrow-body-style': 'off',
     'object-curly-spacing': ['warn', 'always'],
     'no-unused-vars': [
       'warn',
@@ -88,6 +90,7 @@ module.exports = {
         ],
       },
     ],
+    'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-boolean-value': 'off',
@@ -96,6 +99,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-wrap-multilines': 'off',
     'react/destructuring-assignment': 'off',
+    'react/function-component-definition': 'off',
   },
   overrides: [
     {
