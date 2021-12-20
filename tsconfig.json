@@ -21,6 +21,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".eslintrc.js", "jest.setup.js", "jest.config.js"],
+  "include": ["next-env.d.ts",
+              "**/*.ts", "**/*.tsx",
+              ".eslintrc.js",
+              "./setupTests.js",
+              "jest.config.js",
+              "cypress/**/*.*",
+  ],
   "exclude": ["node_modules"]
 }

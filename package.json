@@ -6,6 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --env=jsdom --testPathIgnorePatterns test-utils.tsx cypress setupEnv.ts TemplateName.*",
@@ -13,7 +16,8 @@
     "test:ci": "jest --ci",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:clean": "rm -rf cypress"
+    "cypress:clean": "rm -rf cypress",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -52,14 +56,22 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.5.3",
     "eslint-plugin-testing-library": "^5.0.1",
+    "husky": "^7.0.4",
     "jest": "^27.4.5",
     "jest-dom": "^4.0.0",
     "msw": "^0.36.3",
     "prettier": "^2.5.1",
     "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
     "typescript": "4.5.4"
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write 'components/**/*.{ts,tsx,scss,css,json}' && next lint && jest --env=jsdom --testPathIgnorePatterns test-utils.tsx cypress setupEnv.ts TemplateName.*"
+    }
   }
 }

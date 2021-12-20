@@ -1,3 +1,6 @@
 docs/*
 templates/*
 node_modules/
+cypress/
+jest.config.js
+setUpTests.js
