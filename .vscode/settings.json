@@ -1,0 +1,5 @@
+{
+  "css.validate": false, // disable css built-in linter
+  "stylelint.enable": true,
+  "scss.validate": false // disable scss built-in linter (optional if using scss)
+}

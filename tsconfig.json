@@ -27,6 +27,8 @@
               "./setupTests.js",
               "jest.config.js",
               "cypress/**/*.*",
+              "postcss.config.js",
+              "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
 }
