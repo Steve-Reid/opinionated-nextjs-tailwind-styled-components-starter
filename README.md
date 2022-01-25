@@ -1,6 +1,6 @@
-# Next Opinionated Starter
+# Next Opinionated Tailwind Styled Components Starter
 
-An opinionated React Nextjs starter project
+An opinionated Nextjs starter project
 
 
 ## Tech Stack
@@ -8,7 +8,10 @@ An opinionated React Nextjs starter project
 - [NextJS v12](https://nextjs.org/) project - bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 - React & React DOM v17
 - Type Checker - TypeScript v4.5.2
-- Storybook v6.4.7
+- CSS Framework - TailwindCSS v3
+- Component level Styling - Styled Components
+- Component Level CSS Integration - [Twin.Macro](https://github.com/ben-rogerson/twin.examples/tree/master/next-styled-components)
+- Component UI Development - Storybook v6.4.7
 - Lint - ESlint v8, AirBnB & Eslint-config-next
 - Format - Prettier
 - Unit Testing - Jest + react-testing-library
@@ -54,6 +57,11 @@ Entry point `pages/index.tsx`.
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
 The `pages/api` directory mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Styling configurations
+
+This starter has been configure to accommodate both Tailwind and Styled Components styles syntax, or even Styled Components containing Tailwind classes syntax.
+
+You can refer to the [docs](https://github.com/ben-rogerson/twin.macro/tree/master/docs) in the twin.macro  repository for guidance.
 ## Eslint configurations
 
 Lint set according to Airbnb and NextJS style guides.
