@@ -28,7 +28,9 @@
               "jest.config.js",
               "cypress/**/*.*",
               "postcss.config.js",
-              "tailwind.config.js"
+              "tailwind.config.js",
+              "babel-plugin-macros.config.js",
+              "twin.d.ts"
   ],
   "exclude": ["node_modules"]
 }
